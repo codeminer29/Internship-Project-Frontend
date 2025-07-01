@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <div class="max-w-xl mx-auto py-10 px-6 bg-white shadow-xl rounded-xl mt-10">
+    <h1 class="text-3xl font-bold mb-6 text-center">Student Management</h1>
+
+    <form id="studentForm" class="space-y-4">
+      <input type="hidden" id="studentId" />
+      <input id="name" type="text" placeholder="Name" required class="w-full p-2 border rounded-md" />
+      <input id="email" type="email" placeholder="Email" required class="w-full p-2 border rounded-md" />
+      <input id="course" type="text" placeholder="Course" required class="w-full p-2 border rounded-md" />
+      <input id="age" type="number" placeholder="Age" required min="10" max="100" class="w-full p-2 border rounded-md" />
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+        Save Student
+      </button>
+    </form>
+
+    <p id="errorMsg" class="text-red-500 mt-2 text-center"></p>
+  </div>
+
+  <div class="max-w-2xl mx-auto mt-10 px-6">
+    <input id="searchInput" type="text" placeholder="Search by name or course"
+           class="w-full p-2 border rounded-md mb-4" />
+
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <input id="courseFilter" type="text" placeholder="Filter by course" class="p-2 border rounded-md" />
+      <input id="ageFilter" type="number" placeholder="Max age" class="p-2 border rounded-md" />
+    </div>
+
+    <ul id="studentList" class="space-y-3"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
