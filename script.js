@@ -1,4 +1,4 @@
-const apiUrl = 'https://student-management-backend-h37r.onrender.com/api/students';
+const apiUrl = 'http://localhost:8080/api/students';
 
 document.addEventListener('DOMContentLoaded', () => {
     loadStudents();
