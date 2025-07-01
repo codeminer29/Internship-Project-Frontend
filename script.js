@@ -1,4 +1,4 @@
-const apiUrl = 'https://https://student-management-backend-3mmb.onrender.com/api/students';
+const apiUrl = 'https://student-management-backend-h37r.onrender.com/api/students';
 
 document.addEventListener('DOMContentLoaded', () => {
     loadStudents();
